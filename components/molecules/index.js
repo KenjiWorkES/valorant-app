@@ -1,1 +1,1 @@
-export { default as HeaderNavigation } from "./HeaderNavigation";
+export { default as HeaderList } from "./HeaderList";
