@@ -11,8 +11,11 @@ const Header = () => {
       />
       <nav className="header__nav">
         <HeaderList />
+        <SearchInput />
       </nav>
-      <SearchInput />
+      <button className="header__burguer">
+        <span className="header__line"></span>
+      </button>
     </header>
   );
 };

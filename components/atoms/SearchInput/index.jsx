@@ -4,7 +4,7 @@ const SearchInput = () => {
       <input type="text" className="search__input" />
       <button className="header__button">
         <img
-          src="/search-icon.svg"
+          src="/search-white-icon.svg"
           alt="Search Button Icon"
           className="search__icon"
         />
