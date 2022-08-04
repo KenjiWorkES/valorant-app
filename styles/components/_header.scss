@@ -1,12 +1,27 @@
 .header {
   background-color: $color-red-primary;
   padding: 2rem 1rem;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+
+  @include responsive(desktop) {
+    padding: 3rem 5rem;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 144rem;
+    margin: 0 auto;
+  }
 
   &__logo {
     width: 30%;
     max-width: 10rem;
+
+    @include responsive(desktop) {
+      max-width: 12rem;
+    }
   }
 
   &__nav {
@@ -19,21 +34,60 @@
     flex-direction: column;
     padding: 8rem 1rem;
     //display: none;
+
+    @include responsive(tablet) {
+      position: relative;
+      min-height: auto;
+      flex-direction: row;
+      padding: 0;
+      background-color: transparent;
+      align-items: center;
+    }
+
+    @include responsive(desktop) {
+      width: 80%;
+    }
   }
 
   &__list {
     list-style: none;
     margin-bottom: 2rem;
+
+    @include responsive(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+
+    @include responsive(desktop) {
+      margin-right: 4rem;
+      width: 100%;
+      justify-content: flex-end;
+    }
   }
 
   &__item {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.3rem;
     color: $color-light;
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
+
+      @include responsive(tablet) {
+        margin-bottom: 0;
+        margin-right: 1rem;
+        @include responsive(desktop) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    @include responsive(desktop) {
+      font-size: 1.8rem;
     }
   }
 
@@ -43,6 +97,10 @@
     background-color: transparent;
     border: none;
     position: relative;
+
+    @include responsive(tablet) {
+      display: none;
+    }
   }
 
   &__line {
