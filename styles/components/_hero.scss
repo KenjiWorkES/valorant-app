@@ -2,12 +2,29 @@
   width: 100%;
   max-width: 144rem;
   padding: 2rem 1rem;
+
   &__container {
+    border: 2px solid #fa4454;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   &__image {
+    order: 1;
   }
 
   &__info {
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
   }
 }

@@ -3,8 +3,8 @@ import { MainButton } from "../../atoms";
 const HeroInfo = () => {
   return (
     <div className="hero__info">
-      <h1 className="heading">Valorant: o jogo competitivo 5x5</h1>
-      <p className="paragraph paragraph--semiBold">
+      <h1 className="heading hero__title">Valorant: o jogo competitivo 5x5</h1>
+      <p className="paragraph paragraph--semiBold hero__text">
         Um FPS tático 5x5 com personagens marcantes, mecânica de tiro precisa e
         habilidades únicas!{" "}
       </p>
