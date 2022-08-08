@@ -1,10 +1,11 @@
-import { Header } from "../components/organisms";
+import { Header, Footer } from "../components/organisms";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

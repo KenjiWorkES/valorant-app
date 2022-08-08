@@ -1,3 +1,5 @@
+import { FooterNav, FooterSocial } from "../../molecules";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,6 +13,8 @@ const Footer = () => {
             Games, Inc.
           </p>
         </div>
+        <FooterNav />
+        <FooterSocial />
       </div>
     </footer>
   );
