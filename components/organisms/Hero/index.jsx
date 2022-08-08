@@ -12,6 +12,7 @@ const Hero = () => {
           alt="Imagem com 3 agentes"
           width="565"
           height="565"
+          className="hero__image"
         />
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { MainButton } from "../../atoms";
+
 const HeroInfo = () => {
   return (
     <div className="hero__info">
@@ -6,6 +8,7 @@ const HeroInfo = () => {
         Um FPS tático 5x5 com personagens marcantes, mecânica de tiro precisa e
         habilidades únicas!{" "}
       </p>
+      <MainButton text="saiba mais" />
     </div>
   );
 };

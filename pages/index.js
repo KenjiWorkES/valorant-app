@@ -1,5 +1,11 @@
+import { Hero } from "../components/organisms";
+
 const HomePage = () => {
-  return <h1>Teste</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default HomePage;

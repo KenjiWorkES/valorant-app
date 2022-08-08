@@ -1,0 +1,19 @@
+.heading {
+  font-family: $body-font;
+  font-size: 4rem;
+  color: $color-dark-secondary;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.paragraph {
+  font-family: $body-font;
+  font-size: 1.6rem;
+  color: $color-dark-primary;
+  font-weight: 400;
+  line-height: 2.2rem;
+
+  &--semiBold {
+    font-weight: 600;
+  }
+}
