@@ -10,4 +10,9 @@
   font-size: 1.2rem;
   line-height: 2rem;
   border-radius: 0.5rem;
+
+  @include responsive(desktop) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
 }

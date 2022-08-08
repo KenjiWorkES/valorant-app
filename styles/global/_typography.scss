@@ -4,6 +4,16 @@
   color: $color-dark-secondary;
   font-weight: 700;
   line-height: 3.6rem;
+
+  @include responsive(tablet) {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  @include responsive(desktop) {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
 }
 
 .paragraph {
@@ -12,6 +22,11 @@
   color: $color-dark-primary;
   font-weight: 400;
   line-height: 2.2rem;
+
+  @include responsive(desktop) {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
 
   &--semiBold {
     font-weight: 600;

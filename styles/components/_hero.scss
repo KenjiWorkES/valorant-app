@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  max-width: 144rem;
+
   padding: 2rem 1rem;
 
   &__container {
@@ -9,6 +9,18 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    max-width: 144rem;
+
+    @include responsive(tablet) {
+      flex-direction: row;
+      padding: 4rem;
+      align-items: center;
+    }
+
+    @include responsive(desktop) {
+      padding: 5rem 10rem;
+      margin: 0 auto;
+    }
   }
 
   &__image {
@@ -18,13 +30,30 @@
   &__info {
     order: 2;
     margin-top: 1rem;
+
+    @include responsive(tablet) {
+      order: 0;
+      margin-right: 2rem;
+    }
+
+    @include responsive(desktop) {
+      width: 50%;
+    }
   }
 
   &__title {
     margin-bottom: 2rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__text {
     margin-bottom: 3rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 5rem;
+    }
   }
 }
