@@ -2,6 +2,12 @@
   padding: 2rem 1rem;
   width: 100%;
 
+  @include responsive(desktop) {
+    padding: 2rem;
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
   &__container {
     border: 3px solid $color-red-primary;
     width: 100%;
@@ -10,12 +16,27 @@
     color: $color-dark-secondary;
     display: grid;
     grid-template-columns: 100%;
+
+    @include responsive(desktop) {
+      grid-template-columns: 50% 25% 25%;
+      padding: 2rem;
+    }
   }
 
   &__copyright {
     margin-bottom: 2rem;
     border-bottom: 3px solid $color-red-primary;
     padding-bottom: 2rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+
+      margin-right: 3rem;
+      border-right: 3px solid $color-red-primary;
+      padding-right: 3rem;
+    }
   }
 
   &__title {
@@ -39,6 +60,16 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 3px solid $color-red-primary;
+
+    @include responsive(desktop) {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+
+      margin-right: 3rem;
+      border-right: 3px solid $color-red-primary;
+      padding-right: 3rem;
+    }
   }
 
   &__list {
