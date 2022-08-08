@@ -2,7 +2,9 @@ import Image from "next/image";
 
 import { AgentsItem } from "../../atoms";
 
-const AgentsGrid = () => {
+const AgentsGrid = ({ items }) => {
+  const slicedItems = items.slice(0, 8);
+
   return (
     <div className="agents__grid">
       <button className="agents__leftArrow">
@@ -11,11 +13,17 @@ const AgentsGrid = () => {
           height={31}
           src="/arrow-left.svg"
           alt="Passar para a esquerda"
-          className="agents__image"
+          className="agents__icon"
         />
       </button>
       <ul className="agents__content">
-        <AgentsItem name="Astra" image="" />
+        {slicedItems.map((agent) => (
+          <AgentsItem
+            key={agent.uuid}
+            name={agent.displayName}
+            image={agent.fullPortrait}
+          />
+        ))}
       </ul>
       <button className="agents__rightArrow">
         <Image
@@ -23,7 +31,7 @@ const AgentsGrid = () => {
           height={31}
           src="/arrow-right.svg"
           alt="Passar para a direita"
-          className="agents__image"
+          className="agents__icon"
         />
       </button>
     </div>

@@ -4,10 +4,10 @@ const AgentsItem = ({ name, image, id }) => {
   return (
     <li className="agents__item">
       <h3 className="agents__name">{name}</h3>
-      <Image
+      <img
+        className="agents__image"
         width={279}
         height={279}
-        objectFit="cover"
         src={image}
         alt={"Imagem do " + name}
       />

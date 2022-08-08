@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
+  images: {
+    domains: ["media.valorant-api.com"],
+  },
 };
 
 module.exports = nextConfig;
