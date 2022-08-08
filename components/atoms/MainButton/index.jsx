@@ -1,5 +1,5 @@
 const MainButton = ({ text, onClick, className }) => {
-  const classes = "button" + (className ? className : "");
+  const classes = "button " + (className ? className : "");
 
   const onClickHandler = onClick ? onClick : () => {};
 

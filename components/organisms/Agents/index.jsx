@@ -6,7 +6,10 @@ const Agents = ({ items }) => {
     <section className="agents">
       <h2 className="sectionHeading">Agentes</h2>
       <AgentsGrid items={items} />
-      <MainButton text="Ver todos os agentes" />
+      <MainButton
+        className="button--outlineRed agents__button"
+        text="Ver todos os agentes"
+      />
     </section>
   );
 };

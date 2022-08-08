@@ -24,6 +24,11 @@
   line-height: 4rem;
   letter-spacing: 0.03em;
   color: $color-dark-secondary;
+
+  @include responsive(desktop) {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
 }
 
 .paragraph {
