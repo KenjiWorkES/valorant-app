@@ -1,9 +1,10 @@
-import { Hero } from "../components/organisms";
+import { Hero, Agents } from "../components/organisms";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <Agents />
     </>
   );
 };

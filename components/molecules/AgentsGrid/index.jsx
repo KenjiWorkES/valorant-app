@@ -10,7 +10,7 @@ const AgentsGrid = () => {
           width={16}
           height={31}
           src="/arrow-left.svg"
-          alt="Left Arrow"
+          alt="Passar para a esquerda"
           className="agents__image"
         />
       </button>
@@ -22,7 +22,7 @@ const AgentsGrid = () => {
           width={16}
           height={31}
           src="/arrow-right.svg"
-          alt="Right Arrow"
+          alt="Passar para a direita"
           className="agents__image"
         />
       </button>
