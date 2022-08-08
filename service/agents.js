@@ -6,5 +6,3 @@ export const getAllAgents = async () => {
   const data = await response.json();
   return data;
 };
-
-export default getAllAgents;
