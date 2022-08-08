@@ -1,2 +1,13 @@
 .button {
+  border: none;
+  background-color: $color-red-primary;
+  color: $color-light;
+  padding: 1.5rem 14rem;
+  width: 100%;
+  max-width: 40rem;
+  font-family: $display-font;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
 }
