@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 import Image from "next/image";
 
 import { AgentsItem } from "../../atoms";
@@ -5,9 +7,21 @@ import { AgentsItem } from "../../atoms";
 const AgentsGrid = ({ items }) => {
   const slicedItems = items.slice(0, 8);
 
+  const sliderRef = useRef();
+
+  const scrollToLeftHandler = () => {
+    const width = sliderRef.current.getBoundingClientRect().width;
+    sliderRef.current.scrollBy(-width, 0);
+  };
+
+  const scrollToRightHandler = () => {
+    const width = sliderRef.current.getBoundingClientRect().width;
+    sliderRef.current.scrollBy(width, 0);
+  };
+
   return (
     <div className="agents__grid">
-      <button className="agents__leftArrow">
+      <button className="agents__leftArrow" onClick={scrollToLeftHandler}>
         <Image
           width={16}
           height={31}
@@ -16,7 +30,7 @@ const AgentsGrid = ({ items }) => {
           className="agents__icon"
         />
       </button>
-      <ul className="agents__content">
+      <ul className="agents__content" ref={sliderRef}>
         {slicedItems.map((agent) => (
           <AgentsItem
             key={agent.uuid}
@@ -25,7 +39,7 @@ const AgentsGrid = ({ items }) => {
           />
         ))}
       </ul>
-      <button className="agents__rightArrow">
+      <button className="agents__rightArrow" onClick={scrollToRightHandler}>
         <Image
           width={16}
           height={31}
