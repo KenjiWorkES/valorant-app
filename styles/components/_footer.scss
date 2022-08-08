@@ -3,7 +3,7 @@
   width: 100%;
 
   @include responsive(desktop) {
-    padding: 2rem;
+    padding: 2rem 1rem;
     max-width: 144rem;
     margin: 0 auto;
   }
