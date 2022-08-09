@@ -54,6 +54,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-light;
+    }
+  }
+
+  &__item:hover &__name {
+    color: $color-red-primary;
+  }
+
+  &__item:hover &__image {
+    filter: invert(60%) sepia(16%) saturate(6353%) hue-rotate(327deg)
+      brightness(109%) contrast(96%);
   }
 
   &__image {
