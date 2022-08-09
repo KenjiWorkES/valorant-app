@@ -6,13 +6,27 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+  @include responsive(desktop) {
+    padding: 5.5rem 5rem;
+  }
+
   &__container {
     max-width: 144rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
     margin-bottom: 3rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
   }
 
   &__grid {
@@ -20,6 +34,16 @@
     grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
     row-gap: 4rem;
     margin-bottom: 3rem;
+
+    @include responsive(tablet) {
+      justify-content: center;
+    }
+
+    @include responsive(desktop) {
+      margin-bottom: 5rem;
+      row-gap: 5rem;
+      column-gap: 5rem;
+    }
   }
 
   &__item {

@@ -10,7 +10,7 @@ const GameModes = ({ items }) => {
         </h2>
         <GameModesGrid items={items} />
         <MainButton
-          className="gameModes__button button__outlineWhite"
+          className="button--outlineWhite gameModes__button "
           text="Ver todos os modos"
         />
       </div>
