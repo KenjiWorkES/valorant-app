@@ -1,9 +1,10 @@
 import { Hero, Agents, GameModes } from "../components/organisms";
 import { getAllAgents } from "../service/agents";
 import { getAllGameModes } from "../service/modes";
+import { getAllMaps } from "../service/maps";
 
-const HomePage = ({ agents, gameModes }) => {
-  console.log(gameModes);
+const HomePage = ({ agents, gameModes, maps }) => {
+  console.log(maps);
 
   return (
     <>
@@ -19,10 +20,13 @@ export const getStaticProps = async () => {
 
   const gameModes = await getAllGameModes();
 
+  const maps = await getAllMaps();
+
   return {
     props: {
       agents: agents,
       gameModes: gameModes,
+      maps: maps,
     },
   };
 };
