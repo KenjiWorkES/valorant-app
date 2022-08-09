@@ -88,6 +88,13 @@
     font-weight: 600;
     line-height: 2.3rem;
     color: $color-light;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-dark-secondary;
+      transform: translateY(-5px);
+    }
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
