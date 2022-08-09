@@ -11,6 +11,7 @@
   line-height: 2rem;
   border-radius: 0.5rem;
   transition: all 0.3s;
+  text-transform: uppercase;
   cursor: pointer;
 
   &:hover {
@@ -26,6 +27,7 @@
     padding: 1.5rem 5rem;
     width: auto;
     background-color: transparent;
+    text-transform: none;
 
     @include responsive(desktop) {
       font-size: 2.4rem;
@@ -47,6 +49,7 @@
     padding: 1.5rem 5rem;
     width: auto;
     background-color: transparent;
+    text-transform: none;
 
     &:hover {
       color: $color-red-primary;
