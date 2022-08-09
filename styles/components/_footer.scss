@@ -85,6 +85,14 @@
     line-height: 1.9rem;
     letter-spacing: 0.03em;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      color: $color-red-primary;
+      font-weight: 700;
+    }
   }
 
   &__social {
@@ -106,5 +114,6 @@
   }
 
   &__icon {
+    cursor: pointer;
   }
 }

@@ -27,6 +27,7 @@
     border: none;
     background-color: transparent;
     transition: transform 0.3s;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-3px);

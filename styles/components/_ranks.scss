@@ -51,6 +51,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-light;
+    }
+  }
+
+  &__item:hover &__name {
+    color: $color-red-primary;
   }
 
   &__image {
