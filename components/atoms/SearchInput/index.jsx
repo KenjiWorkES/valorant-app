@@ -1,7 +1,7 @@
 const SearchInput = () => {
   return (
     <form className="search">
-      <input type="text" className="search__input" />
+      <input type="text" className="search__input" placeholder="Pesquisar..." />
       <button className="search__button">
         <img
           src="/search-white-icon.svg"

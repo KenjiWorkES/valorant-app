@@ -30,6 +30,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
   }
 
   &__leftArrow {
@@ -50,6 +51,10 @@
     overflow: auto;
     list-style: none;
     scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @include responsive(tablet) {
       grid-template-columns: repeat(8, 50%);
