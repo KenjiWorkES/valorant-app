@@ -5,7 +5,7 @@ const RanksList = ({ tiers }) => {
     <ul className="ranks__list">
       {tiers.map((tier) => (
         <RanksItem
-          key={tier.uuid}
+          key={tier.tier}
           image={tier.largeIcon}
           name={tier.divisionName}
         />

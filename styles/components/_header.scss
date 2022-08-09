@@ -83,6 +83,8 @@
     }
   }
 
+  &__link:link,
+  &__link:visited,
   &__link {
     text-decoration: none;
 
@@ -100,6 +102,7 @@
   }
 
   &__item {
+    text-decoration: none;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.3rem;
@@ -126,6 +129,11 @@
 
     @include responsive(desktop) {
       font-size: 1.8rem;
+    }
+
+    &--active {
+      color: $color-dark-secondary;
+      transform: translateY(-5px);
     }
   }
 
