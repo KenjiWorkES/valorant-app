@@ -79,8 +79,13 @@
     row-gap: 0.7rem;
   }
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__item {
     font-family: $body-font;
+    color: $color-dark-secondary;
     font-size: 1.4rem;
     line-height: 1.9rem;
     letter-spacing: 0.03em;
