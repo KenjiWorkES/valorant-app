@@ -5,3 +5,4 @@ export { default as FooterIcons } from "./FooterIcons";
 export { default as MainButton } from "./MainButton";
 export { default as AgentsItem } from "./AgentsItem";
 export { default as GameModesItem } from "./GameModesItem";
+export { default as MapsTab } from "./MapsTab";
