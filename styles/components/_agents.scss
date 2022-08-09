@@ -35,10 +35,22 @@
 
   &__leftArrow {
     left: 0;
+
+    &--full {
+      @include responsive(desktop) {
+        display: none;
+      }
+    }
   }
 
   &__rightArrow {
     right: 0;
+
+    &--full {
+      @include responsive(desktop) {
+        display: none;
+      }
+    }
   }
 
   &__icon {
@@ -62,6 +74,14 @@
 
     @include responsive(desktop) {
       grid-template-columns: repeat(8, 25%);
+    }
+
+    &--full {
+      @include responsive(desktop) {
+        grid-template-columns: repeat(4, 25%);
+        row-gap: 6rem;
+        justify-items: center;
+      }
     }
   }
 
