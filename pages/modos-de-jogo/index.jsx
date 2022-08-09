@@ -2,7 +2,7 @@ import { GameModesFull } from "../../components/organisms";
 import { getAllGameModes } from "../../service/modes";
 
 const GameModesPage = ({ gameModes }) => {
-  return <GameModesFull items={gameModes.data} />;
+  return <GameModesFull items={gameModes.data} isFull={true} />;
 };
 
 export const getStaticProps = async () => {
