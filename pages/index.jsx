@@ -1,4 +1,10 @@
-import { Hero, Agents, GameModes, HomeMaps } from "../components/organisms";
+import {
+  Hero,
+  Agents,
+  GameModes,
+  HomeMaps,
+  HomeRanks,
+} from "../components/organisms";
 import { getAllAgents } from "../service/agents";
 import { getAllGameModes } from "../service/modes";
 import { getAllMaps } from "../service/maps";
@@ -13,6 +19,7 @@ const HomePage = ({ agents, gameModes, maps, ranks }) => {
       <Agents items={agents.data} />
       <GameModes items={gameModes.data} />
       <HomeMaps items={maps.data} />
+      <HomeRanks items={ranks.data} />
     </>
   );
 };
