@@ -1,17 +1,28 @@
 .ranks {
   background-color: $color-red-primary;
   padding: 2rem 1rem;
+  margin-bottom: 3rem;
+
+  @include responsive(desktop) {
+    padding: 4rem 5rem;
+    margin-bottom: 5rem;
+  }
 
   &__container {
     max-width: 144rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 
   &__title {
     margin-bottom: 3rem;
     align-self: flex-start;
+
+    @include responsive(desktop) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__button {
@@ -25,6 +36,11 @@
     row-gap: 4rem;
     column-gap: 4rem;
     margin-bottom: 3rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 5rem;
+      column-gap: 11.3rem;
+    }
   }
 
   &__item {
