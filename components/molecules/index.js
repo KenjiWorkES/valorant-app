@@ -3,3 +3,4 @@ export { default as FooterNav } from "./FooterNav";
 export { default as FooterSocial } from "./FooterSocial";
 export { default as HeroInfo } from "./HeroInfo";
 export { default as AgentsGrid } from "./AgentsGrid";
+export { default as GameModesGrid } from "./GameModesGrid";
