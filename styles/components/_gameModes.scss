@@ -1,0 +1,48 @@
+.gameModes {
+  background-color: $color-red-primary;
+  padding: 2rem 1rem;
+  background-image: url("../../public/VALORANT.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &__container {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
+    row-gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    border: 5px solid $color-light;
+    border-radius: 0.5rem;
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 12.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    font-family: $body-font;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: $color-light;
+    text-transform: uppercase;
+  }
+}

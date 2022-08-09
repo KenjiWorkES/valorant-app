@@ -25,6 +25,10 @@
   letter-spacing: 0.03em;
   color: $color-dark-secondary;
 
+  &--light {
+    color: $color-light;
+  }
+
   @include responsive(desktop) {
     font-size: 3.6rem;
     line-height: 5.4rem;

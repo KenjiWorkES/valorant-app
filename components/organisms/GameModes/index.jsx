@@ -4,9 +4,16 @@ import { GameModesGrid } from "../../molecules";
 const GameModes = ({ items }) => {
   return (
     <section className="gameModes">
-      <h2 className="sectionHeading sectionHeading--light">Modos de Jogos</h2>
-      <GameModesGrid items={items} />
-      <MainButton text="Ver todos os modos" />
+      <div className="gameModes__container">
+        <h2 className="sectionHeading sectionHeading--light gameModes__title">
+          Modos de Jogos
+        </h2>
+        <GameModesGrid items={items} />
+        <MainButton
+          className="gameModes__button button__outlineWhite"
+          text="Ver todos os modos"
+        />
+      </div>
     </section>
   );
 };

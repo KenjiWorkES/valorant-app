@@ -27,6 +27,22 @@
     }
   }
 
+  &--outlineWhite {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: $color-light;
+    border: 3px solid $color-light;
+    max-width: none;
+    padding: 1.5rem 5rem;
+    width: auto;
+    background-color: transparent;
+
+    @include responsive(desktop) {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+  }
+
   @include responsive(desktop) {
     font-size: 1.8rem;
     line-height: 2.7rem;
