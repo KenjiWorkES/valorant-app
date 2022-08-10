@@ -7,4 +7,4 @@ export { default as HomeMaps } from "./HomeMaps";
 export { default as HomeRanks } from "./HomeRanks";
 export { default as AgentsFull } from "./AgentsFull";
 export { default as GameModesFull } from "./GameModesFull";
-export { default as AgentSingle } from "./AgentSingle";
+export { default as SingleAgent } from "./SingleAgent";

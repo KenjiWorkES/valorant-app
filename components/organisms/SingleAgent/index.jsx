@@ -1,6 +1,6 @@
 import { AgentSkills, AgentInformation } from "../../molecules";
 
-const AgentSingle = ({ agent }) => {
+const SingleAgent = ({ agent }) => {
   return (
     <section className="singleAgent">
       <AgentInformation
@@ -14,4 +14,4 @@ const AgentSingle = ({ agent }) => {
   );
 };
 
-export default AgentSingle;
+export default SingleAgent;

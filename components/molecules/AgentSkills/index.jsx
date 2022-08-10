@@ -5,7 +5,7 @@ const AgentSkills = ({ skills }) => {
     <section className="singleAgents__skills">
       <h3 className="singlesAgents__subTitle subHeading">Habilidades</h3>
       {skills.map((skill, index) => (
-        <SingleSkill key={skill.index} skill={skill} />
+        <SingleSkill key={index} skill={skill} />
       ))}
     </section>
   );

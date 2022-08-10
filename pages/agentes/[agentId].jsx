@@ -1,9 +1,10 @@
 import { getSingleAgent } from "../../service/agents";
+import { SingleAgent } from "../../components/organisms";
 
-const AgentSingle = (props) => {
-  console.log(props.agent);
+const AgentSingle = ({ agent }) => {
+  console.log(agent);
 
-  return <h1>Test</h1>;
+  return <SingleAgent agent={agent} />;
 };
 
 export const getStaticPaths = async (ctx) => {

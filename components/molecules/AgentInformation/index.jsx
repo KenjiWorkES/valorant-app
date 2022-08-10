@@ -8,7 +8,7 @@ const AgentInformation = ({ description, name, role, image }) => {
         alt={`Imagem do Personagem ${name}`}
       />
       <div className="singleAgent__text">
-        <AgentDescription text={description} title={role} />
+        <AgentDescription text={description} title={name} />
         <AgentDescription
           text={role.description}
           title={role.displayName}
