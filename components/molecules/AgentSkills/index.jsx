@@ -1,9 +1,12 @@
 import { SingleSkill } from "../../atoms";
 
-const AgentSkills = () => {
+const AgentSkills = ({ skills }) => {
   return (
     <section className="singleAgents__skills">
-      <h3 className="singlesAgents__subTitle sunHeading">Habilidades</h3>
+      <h3 className="singlesAgents__subTitle subHeading">Habilidades</h3>
+      {skills.map((skill, index) => (
+        <SingleSkill key={skill.index} skill={skill} />
+      ))}
     </section>
   );
 };

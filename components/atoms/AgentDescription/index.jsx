@@ -1,9 +1,9 @@
-const AgentDescription = ({ isSubtitle, title, children }) => {
+const AgentDescription = ({ isSubtitle, title, text }) => {
   if (isSubtitle) {
     return (
       <div className="singleAgent__description">
         <h2 className="singleAgent__function sectionHeading">{title}</h2>
-        <p className="singleAgent__desc paragraph">{children}</p>
+        <p className="singleAgent__desc paragraph">{text}</p>
       </div>
     );
   }
@@ -11,7 +11,7 @@ const AgentDescription = ({ isSubtitle, title, children }) => {
   return (
     <div className="singleAgent__description">
       <h1 className="singleAgent__name heading">{title}</h1>
-      <p className="singleAgent__desc paragraph">{children}</p>
+      <p className="singleAgent__desc paragraph">{text}</p>
     </div>
   );
 };
