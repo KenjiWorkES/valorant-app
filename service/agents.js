@@ -8,7 +8,7 @@ export const getAllAgents = async () => {
   return data;
 };
 
-export const getSinglesAgent = async (uuid) => {
+export const getSingleAgent = async (uuid) => {
   const response = await fetch(`${baseUrl}/${uuid}?language=pt-BR`);
   const data = await response.json();
   return data;
