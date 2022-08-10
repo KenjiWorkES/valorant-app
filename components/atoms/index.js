@@ -7,3 +7,5 @@ export { default as AgentsItem } from "./AgentsItem";
 export { default as GameModesItem } from "./GameModesItem";
 export { default as MapsTab } from "./MapsTab";
 export { default as RanksItem } from "./RanksItem";
+export { default as AgentDescription } from "./AgentDescription";
+export { default as SingleSkill } from "./SingleSkill";

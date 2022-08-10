@@ -6,3 +6,5 @@ export { default as AgentsGrid } from "./AgentsGrid";
 export { default as GameModesGrid } from "./GameModesGrid";
 export { default as MapsAccordion } from "./MapsAccordion";
 export { default as RanksList } from "./RanksList";
+export { default as AgentSkills } from "./AgentSkills";
+export { default as AgentInformation } from "./AgentInformation";
