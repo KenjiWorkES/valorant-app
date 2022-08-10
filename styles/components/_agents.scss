@@ -77,6 +77,12 @@
     }
 
     &--full {
+      grid-template-columns: repeat(19, 100%);
+
+      @include responsive(tablet) {
+        grid-template-columns: repeat(19, 50%);
+      }
+
       @include responsive(desktop) {
         grid-template-columns: repeat(4, 25%);
         row-gap: 6rem;
