@@ -6,7 +6,12 @@ const MapsAccordion = ({ items }) => {
   return (
     <div className="maps__accordion">
       {slicedMaps.map((map) => (
-        <MapsTab key={map.uuid} image={map.splash} name={map.displayName} />
+        <MapsTab
+          key={map.uuid}
+          image={map.splash}
+          name={map.displayName}
+          uuid={map.uuid}
+        />
       ))}
     </div>
   );
