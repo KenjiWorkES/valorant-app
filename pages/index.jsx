@@ -5,17 +5,31 @@ import {
   HomeMaps,
   HomeRanks,
 } from "../components/organisms";
+
+import { useRouter } from "next/router";
+
 import { getAllAgents } from "../service/agents";
 import { getAllGameModes } from "../service/modes";
 import { getAllMaps } from "../service/maps";
 import { getAllRanks } from "../service/ranks";
 
 const HomePage = ({ agents, gameModes, maps, ranks }) => {
-  console.log(ranks);
+  const router = useRouter();
+
+  const navigateReadMore = () => {
+    router.push("/saiba-mais");
+  };
 
   return (
     <>
-      <Hero />
+      <Hero
+        image="/hero-image.png"
+        text=" Um FPS tático 5x5 com personagens marcantes, mecânica de tiro precisa e
+        habilidades únicas!"
+        title="Valorant: o jogo competitivo 5x5"
+        buttonText="saiba mais"
+        onClick={navigateReadMore}
+      />
       <Agents items={agents.data} />
       <GameModes items={gameModes.data} />
       <HomeMaps items={maps.data} />

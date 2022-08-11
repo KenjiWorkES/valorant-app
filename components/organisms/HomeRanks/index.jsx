@@ -1,7 +1,15 @@
 import { RanksList } from "../../molecules";
 import { MainButton } from "../../atoms";
 
+import { useRouter } from "next/router";
+
 const HomeRanks = ({ items }) => {
+  const router = useRouter();
+
+  const navigateReadMore = () => {
+    router.push("/ranques");
+  };
+
   const tiers = items[4].tiers;
 
   const badges = [tiers[20], tiers[23], tiers[26], tiers[27]];
@@ -16,6 +24,7 @@ const HomeRanks = ({ items }) => {
         <MainButton
           className="button--outlineWhite ranks__button "
           text="Ver todos os modos"
+          onClick={navigateReadMore}
         />
       </div>
     </section>

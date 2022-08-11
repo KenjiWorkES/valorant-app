@@ -2,13 +2,18 @@ import Image from "next/image";
 
 import { HeroInfo } from "../../molecules";
 
-const Hero = () => {
+const Hero = ({ image, title, text, onClick, buttonText }) => {
   return (
     <section className="hero">
       <div className="hero__container">
-        <HeroInfo />
+        <HeroInfo
+          title={title}
+          text={text}
+          buttonText={buttonText}
+          onClick={onClick}
+        />
         <Image
-          src="/hero-image.png"
+          src={image}
           alt="Imagem com 3 agentes"
           width="565"
           height="565"
