@@ -8,3 +8,4 @@ export { default as MapsAccordion } from "./MapsAccordion";
 export { default as RanksList } from "./RanksList";
 export { default as AgentSkills } from "./AgentSkills";
 export { default as AgentInformation } from "./AgentInformation";
+export { default as MapsGrid } from "./MapsGrid";

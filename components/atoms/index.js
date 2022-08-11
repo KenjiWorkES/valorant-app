@@ -9,3 +9,4 @@ export { default as MapsTab } from "./MapsTab";
 export { default as RanksItem } from "./RanksItem";
 export { default as AgentDescription } from "./AgentDescription";
 export { default as SingleSkill } from "./SingleSkill";
+export { default as MapItem } from "./MapItem";
