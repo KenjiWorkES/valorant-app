@@ -7,8 +7,6 @@ const MapsTab = ({ image, name }) => {
         className="maps__tabImage"
         src={image}
         alt={"Mapa " + name}
-        width={640}
-        height={360}
         layout="fill"
       />
       <figcaption className="maps__caption">

@@ -111,8 +111,13 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $color-dark-secondary;
       transform: translateY(-5px);
+
+      color: $color-red-primary;
+
+      @include responsive(tablet) {
+        color: $color-dark-secondary;
+      }
     }
 
     &:not(:last-child) {
@@ -132,8 +137,11 @@
     }
 
     &--active {
-      color: $color-dark-secondary;
-      transform: translateY(-5px);
+      color: $color-red-primary;
+
+      @include responsive(tablet) {
+        color: $color-dark-secondary;
+      }
     }
   }
 

@@ -37,6 +37,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
+    justify-content: center;
     row-gap: 4rem;
     margin-bottom: 3rem;
 
