@@ -94,6 +94,14 @@
     text-transform: uppercase;
   }
 
+  &__time {
+    font-family: $body-font;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: $color-light;
+  }
+
   //modify red
   &__item--red {
     background-color: $color-red-primary;

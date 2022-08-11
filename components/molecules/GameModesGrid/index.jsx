@@ -19,6 +19,8 @@ const GameModesGrid = ({ items, isFull }) => {
           key={gameMode.uuid}
           image={gameMode.displayIcon}
           text={gameMode.displayName}
+          hasTime={isFull ? true : false}
+          time={gameMode.duration}
         />
       ))}
     </ul>

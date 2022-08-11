@@ -1,4 +1,4 @@
-const GameModesItem = ({ image, text, color }) => {
+const GameModesItem = ({ image, text, color, hasTime, time }) => {
   const classes = color
     ? `gameModes__item gameModes__item--${color}`
     : "gameModes__item";
@@ -8,7 +8,9 @@ const GameModesItem = ({ image, text, color }) => {
       {image && (
         <img className="gameModes__image" src={image} alt={"Modo de " + text} />
       )}
-      <p className="gameModes__name">{text}</p>
+      <h4 className="gameModes__name">{text}</h4>
+      {hasTime && time && <p className="gameModes__time">{time}</p>}
+      {hasTime && !time && <p className="gameModes__time">INDEFINIDO</p>}
     </li>
   );
 };
