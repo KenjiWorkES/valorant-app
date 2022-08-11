@@ -1,0 +1,88 @@
+.singleAgent {
+  width: 100%;
+  max-width: 144rem;
+  padding: 2rem 1rem;
+
+  &__information {
+    margin-bottom: 3rem;
+  }
+
+  &__image {
+    width: 10%;
+  }
+
+  &__text {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  &__description {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__name {
+    margin-bottom: 1rem;
+  }
+
+  &__function {
+  }
+
+  &__desc {
+  }
+
+  &__skills {
+  }
+
+  &__subTitle {
+    margin-bottom: 3rem;
+  }
+
+  &__skill {
+    border: 3px solid $color-red-secondary;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__skillIcon {
+    background-color: $color-red-primary;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  &__icon {
+  }
+
+  &__skillDesc {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__type {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-family: $body-font;
+    color: $color-dark-primary;
+    margin-bottom: 0.3rem;
+  }
+
+  &__ability {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.03;
+    font-weight: 700;
+    color: $color-dark-secondary;
+    margin-bottom: 1rem;
+  }
+
+  &__instruction {
+    text-align: center;
+  }
+}

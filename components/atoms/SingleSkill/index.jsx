@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 const SingleSkill = ({ skill }) => {
   return (
-    <figure className="singlesAgent__skill">
+    <figure className="singleAgent__skill">
       <div className="singleAgent__skillIcon">
-        <img
+        <Image
           className="singleAgent__icon"
           src={skill.displayIcon}
           alt={`Imagem da Habilidade ${skill.displayName}`}
+          width={154}
+          height={150}
         />
       </div>
       <figcaption className="singleAgent__skillDesc">
