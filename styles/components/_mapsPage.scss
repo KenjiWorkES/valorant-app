@@ -1,0 +1,52 @@
+.mapsPage {
+  max-width: 144rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+
+  @include responsive(desktop) {
+    padding: 5.5rem 5rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 62.6rem));
+    gap: 4rem;
+    list-style: none;
+    justify-content: center;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    filter: brightness(75%);
+    border-radius: 0.5rem;
+  }
+
+  &__name {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 5%;
+    color: $color-light;
+    font-family: $display-font;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+
+    @include responsive(desktop) {
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+    }
+  }
+}
