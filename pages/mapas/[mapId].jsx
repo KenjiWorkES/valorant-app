@@ -6,11 +6,19 @@ const AgentsSingle = ({ map }) => {
   return (
     <section className="singleMap">
       <h1 className="singleMap__name heading">{map.displayName}</h1>
-      <div className="singlesMap__banner">
-        <img src={map.splash} alt={`Imagem do Mapa ${map.displayName}`} />
+      <div className="singleMap__banner">
+        <img
+          className="singleMap__image"
+          src={map.splash}
+          alt={`Imagem do Mapa ${map.displayName}`}
+        />
       </div>
 
-      <img src={map.displayIcon} alt={`Imagem do Mapa ${map.displayName}`} />
+      <img
+        className="singleMap__map"
+        src={map.displayIcon}
+        alt={`Imagem do Mapa ${map.displayName}`}
+      />
     </section>
   );
 };
