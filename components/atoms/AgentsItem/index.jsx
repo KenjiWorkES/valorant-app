@@ -1,10 +1,17 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const AgentsItem = ({ name, image, id }) => {
+const AgentsItem = ({ name, image, uuid }) => {
+  const router = useRouter();
+
+  const navigateHandler = () => {
+    router.push(`/agentes/${uuid}`);
+  };
+
   return (
-    <li className="agents__item">
+    <li className="agents__item" onClick={navigateHandler}>
       <h3 className="agents__name">{name}</h3>
-      <img
+      <Image
         className="agents__image"
         width={279}
         height={279}

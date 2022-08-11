@@ -47,9 +47,10 @@ const AgentsGrid = ({ items, isFull }) => {
       >
         {slicedItems.map((agent) => (
           <AgentsItem
+            uuid={agent.uuid}
             key={agent.uuid}
             name={agent.displayName}
-            image={agent.fullPortrait}
+            image={agent.fullPortraitV2}
           />
         ))}
       </ul>
