@@ -5,13 +5,15 @@ const SingleSkill = ({ skill }) => {
     <figure className="singleAgent__skill">
       <div className="singleAgent__skillIcon">
         <div>
-          <Image
-            className="singleAgent__icon"
-            src={skill.displayIcon}
-            alt={`Imagem da Habilidade ${skill.displayName}`}
-            width={154}
-            height={150}
-          />
+          {skill.displayIcon && (
+            <Image
+              className="singleAgent__icon"
+              src={skill.displayIcon}
+              alt={`Imagem da Habilidade ${skill.displayName}`}
+              width={154}
+              height={150}
+            />
+          )}
         </div>
       </div>
       <figcaption className="singleAgent__skillDesc">
