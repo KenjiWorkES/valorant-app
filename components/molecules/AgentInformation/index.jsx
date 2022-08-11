@@ -3,13 +3,10 @@ import Image from "next/image";
 const AgentInformation = ({ description, name, role, image }) => {
   return (
     <section className="singleAgent__information">
-      <Image
+      <img
         className="singleAgent__image"
         src={image}
         alt={`Imagem do Personagem ${name}`}
-        height={620}
-        width={682}
-        layout="responsive"
       />
 
       <div className="singleAgent__text">

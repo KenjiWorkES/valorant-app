@@ -2,18 +2,35 @@
   width: 100%;
   max-width: 144rem;
   padding: 2rem 1rem;
+  margin: 0 auto;
 
   &__information {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(desktop) {
+      flex-direction: row;
+      margin-bottom: 4rem;
+    }
   }
 
   &__image {
-    width: 10%;
+    width: 100%;
+
+    @include responsive(desktop) {
+      width: 50%;
+    }
   }
 
   &__text {
     margin-top: 3rem;
     text-align: center;
+    @include responsive(desktop) {
+      width: 50%;
+      text-align: left;
+      margin-top: 10rem;
+    }
   }
 
   &__description {
@@ -37,13 +54,27 @@
 
   &__subTitle {
     margin-bottom: 3rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__skill {
     border: 3px solid $color-red-secondary;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(desktop) {
+      flex-direction: row;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include responsive(desktop) {
+        margin-bottom: 5rem;
+      }
     }
   }
 
@@ -52,6 +83,11 @@
     display: flex;
     justify-content: center;
     padding: 1.5rem;
+
+    @include responsive(desktop) {
+      width: 30%;
+      max-width: 20rem;
+    }
   }
 
   &__icon {
@@ -62,6 +98,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include responsive(desktop) {
+      align-items: flex-start;
+    }
   }
 
   &__type {
@@ -84,5 +124,9 @@
 
   &__instruction {
     text-align: center;
+
+    @include responsive(desktop) {
+      text-align: left;
+    }
   }
 }
