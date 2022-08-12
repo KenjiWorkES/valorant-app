@@ -8,6 +8,7 @@ const SingleAgent = ({ agent }) => {
         name={agent.displayName}
         role={agent.role}
         image={agent.fullPortraitV2}
+        audio={agent.voiceLine.mediaList[0].wave}
       />
       <AgentSkills skills={agent.abilities} />
     </section>

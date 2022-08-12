@@ -1,6 +1,6 @@
-import { AgentDescription } from "../../atoms";
+import { AgentDescription, AudioButton } from "../../atoms";
 import Image from "next/image";
-const AgentInformation = ({ description, name, role, image }) => {
+const AgentInformation = ({ description, name, role, image, audio }) => {
   return (
     <section className="singleAgent__information">
       <img
@@ -16,6 +16,7 @@ const AgentInformation = ({ description, name, role, image }) => {
           title={role.displayName}
           isSubtitle={true}
         />
+        <AudioButton audio={audio} />
       </div>
     </section>
   );
