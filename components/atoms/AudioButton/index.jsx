@@ -12,7 +12,7 @@ const AudioButton = ({ audio }) => {
   return (
     <>
       <button onClick={playVoiceHandler} className="audioButton">
-        Voz
+        <span className="audioButton__icon"></span>
       </button>
       <audio ref={audioRef} src={audio}></audio>
     </>
