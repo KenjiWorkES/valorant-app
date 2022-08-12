@@ -30,6 +30,11 @@
 
     &--small {
       width: 30%;
+      display: none;
+
+      @include responsive(desktop) {
+        display: block;
+      }
     }
 
     &--medium {
