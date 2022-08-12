@@ -1,27 +1,20 @@
 import { useRouter } from "next/router";
 
 import { Hero } from "../../components/organisms";
+import { RanksPage } from "../../components/organisms";
 
 import { getAllRanks } from "../../service/ranks";
 
-const RanksPage = ({ ranks }) => {
+const Ranks = ({ ranks }) => {
   const router = useRouter();
 
   const navigateReadMore = () => {
     router.push("/");
   };
 
-  console.log(ranks);
+  //console.log(ranks);
 
-  return (
-    <Hero
-      image="/no-found-image.png"
-      text="A não! Parece que a Killjoy ainda não terminou de desenvolver essa página."
-      title="Página em desenvolvimento"
-      buttonText="ir para home"
-      onClick={navigateReadMore}
-    />
-  );
+  return <RanksPage tiers={ranks.tiers} />;
 };
 
 export const getStaticProps = async () => {
@@ -34,4 +27,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default RanksPage;
+export default Ranks;
