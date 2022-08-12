@@ -17,7 +17,8 @@ const HomePage = ({ agents, gameModes, maps, ranks }) => {
   const router = useRouter();
 
   const navigateReadMore = () => {
-    router.push("/saiba-mais");
+    window.location.href =
+      "https://playvalorant.com/pt-br/?gclid=CjwKCAjw9NeXBhAMEiwAbaY4lqAoe5VBlGEz10ZkOWgoPCNP9gc-OFfMN5Cf4CGBDNa0Tfd6dTh6ihoCv9kQAvD_BwE&gclsrc=aw.ds";
   };
 
   return (
