@@ -2,12 +2,16 @@ import { useRouter } from "next/router";
 
 import { Hero } from "../../components/organisms";
 
-const RanksPage = () => {
+import { getAllRanks } from "../../service/ranks";
+
+const RanksPage = ({ ranks }) => {
   const router = useRouter();
 
   const navigateReadMore = () => {
     router.push("/");
   };
+
+  console.log(ranks);
 
   return (
     <Hero
@@ -18,6 +22,16 @@ const RanksPage = () => {
       onClick={navigateReadMore}
     />
   );
+};
+
+export const getStaticProps = async () => {
+  const ranks = await getAllRanks();
+
+  return {
+    props: {
+      ranks: ranks.data[4],
+    },
+  };
 };
 
 export default RanksPage;
