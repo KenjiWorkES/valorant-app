@@ -10,3 +10,4 @@ export { default as RanksItem } from "./RanksItem";
 export { default as AgentDescription } from "./AgentDescription";
 export { default as SingleSkill } from "./SingleSkill";
 export { default as MapItem } from "./MapItem";
+export { default as RankItem } from "./RankItem";

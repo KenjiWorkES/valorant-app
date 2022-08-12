@@ -9,3 +9,4 @@ export { default as RanksList } from "./RanksList";
 export { default as AgentSkills } from "./AgentSkills";
 export { default as AgentInformation } from "./AgentInformation";
 export { default as MapsGrid } from "./MapsGrid";
+export { default as RankGrid } from "./RankGrid";

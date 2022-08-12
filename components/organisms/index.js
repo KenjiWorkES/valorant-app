@@ -9,3 +9,4 @@ export { default as AgentsFull } from "./AgentsFull";
 export { default as GameModesFull } from "./GameModesFull";
 export { default as SingleAgent } from "./SingleAgent";
 export { default as Maps } from "./Maps";
+export { default as RanksPage } from "./RanksPage";
