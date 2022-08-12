@@ -3,9 +3,22 @@
   padding: 2rem 1rem;
   margin-bottom: 3rem;
 
+  &--light {
+    background-color: #fff;
+    max-width: 152rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   @include responsive(desktop) {
     padding: 4rem 5rem;
     margin-bottom: 5rem;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
   }
 
   &__container {
@@ -14,6 +27,13 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+
+    &--small {
+      width: 30%;
+    }
+
+    &--medium {
+    }
   }
 
   &__title {
@@ -22,6 +42,28 @@
 
     @include responsive(desktop) {
       margin-bottom: 6rem;
+    }
+  }
+
+  &__tiers {
+    width: 100%;
+    border: 3px solid $color-red-secondary;
+    list-style: none;
+    padding: 5rem;
+    padding-right: 10rem;
+    border-radius: 2rem;
+    position: sticky;
+    top: 0;
+  }
+
+  &__tierItem {
+    font-family: $display-font;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
     }
   }
 
@@ -43,6 +85,19 @@
     }
   }
 
+  &__grid {
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(20rem, 25rem));
+
+    @include responsive(desktop) {
+      grid-template-columns: repeat(3, minmax(20rem, 25rem));
+      gap: 5rem;
+    }
+  }
+
   &__item {
     border: 5px solid $color-light;
     border-radius: 1rem;
@@ -53,6 +108,17 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s;
+
+    &--red {
+      border-color: $color-red-primary;
+    }
+
+    &--first {
+      @include responsive(desktop) {
+        grid-column: 1/ -1;
+        max-width: 25rem;
+      }
+    }
 
     &:hover {
       background-color: $color-light;
@@ -74,5 +140,9 @@
     line-height: 4rem;
     color: $color-light;
     text-transform: uppercase;
+
+    &--dark {
+      color: $color-dark-secondary;
+    }
   }
 }
