@@ -17,9 +17,14 @@
     font-family: inherit;
     color: $color-light;
     font-weight: 400;
+    width: 80%;
 
     &::placeholder {
       color: rgba($color-light, 0.5);
+    }
+
+    &:focus {
+      outline: 2px solid $color-dark-primary;
     }
   }
 
