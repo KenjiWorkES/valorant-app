@@ -1,6 +1,6 @@
 import { SearchModel } from '../../molecules';
 
-const SearchResults = ({ agents, maps, gameModes, ranks, searchText }) => {
+const SearchResults = ({ agents, maps, modes, ranks, searchText }) => {
   return (
     <section className="searchPage">
       <h1 className="sectionHeading searchPage__title">
@@ -21,7 +21,7 @@ const SearchResults = ({ agents, maps, gameModes, ranks, searchText }) => {
         />
         <SearchModel
           type="Modos de Jogos"
-          items={gameModes || []}
+          items={modes || []}
           link="/modos-de-jogo"
           uuid={false}
         />

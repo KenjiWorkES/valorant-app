@@ -6,7 +6,7 @@ import { getfilteredRanks } from '../service/ranks';
 import { SearchResults } from '../components/organisms';
 
 const SearchPage = ({ searchText, agents, modes, maps, ranks }) => {
-  console.log(ranks);
+  console.log(modes);
 
   return (
     <SearchResults
