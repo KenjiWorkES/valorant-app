@@ -4,7 +4,7 @@ const SearchModel = ({ type, items, link, uuid }) => {
   console.log(items);
 
   return (
-    <>
+    <div className="searchPage__model">
       <h3 className="searchPage__type">{type}</h3>
       <ul className="searchPage__list">
         {items &&
@@ -18,7 +18,7 @@ const SearchModel = ({ type, items, link, uuid }) => {
           ))}
         {items.length === 0 && <p>nenhum resultado encontrado</p>}
       </ul>
-    </>
+    </div>
   );
 };
 

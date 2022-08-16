@@ -8,7 +8,7 @@ const SearchItem = ({ text, link, uuid }) => {
 
   return (
     <Link href={linkPath}>
-      <a>
+      <a className="searchPage__link">
         <li className="searchPage__item">{text}</li>
       </a>
     </Link>

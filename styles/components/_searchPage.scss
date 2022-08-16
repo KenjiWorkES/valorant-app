@@ -1,0 +1,70 @@
+.searchPage {
+  padding: 2rem 1rem;
+  max-width: 144rem;
+  margin: 0 auto;
+
+  @include responsive(desktop) {
+    padding: 5rem 2rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include responsive(desktop) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__container {
+  }
+
+  &__model {
+  }
+
+  &__type {
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-family: $display-font;
+
+    @include responsive(desktop) {
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__item {
+    color: $color-dark-primary;
+    border: 2px solid $color-red-primary;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s;
+
+    @include responsive(desktop) {
+      font-size: 2.1rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background-color: $color-red-primary;
+      color: $color-light;
+      transform: translateY(-5px);
+    }
+  }
+}
