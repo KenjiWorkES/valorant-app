@@ -1,8 +1,8 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from 'react';
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import { AgentsItem } from "../../atoms";
+import { AgentsItem } from '../../atoms';
 
 const AgentsGrid = ({ items, isFull }) => {
   let slicedItems;
@@ -26,10 +26,10 @@ const AgentsGrid = ({ items, isFull }) => {
   };
 
   return (
-    <div className={"agents__grid " + (isFull ? "agents__grid--full" : "")}>
+    <div className={'agents__grid ' + (isFull ? 'agents__grid--full' : '')}>
       <button
         className={
-          "agents__leftArrow " + (isFull ? "agents__leftArrow--full" : "")
+          'agents__leftArrow ' + (isFull ? 'agents__leftArrow--full' : '')
         }
         onClick={scrollToLeftHandler}
       >
@@ -42,7 +42,7 @@ const AgentsGrid = ({ items, isFull }) => {
         />
       </button>
       <ul
-        className={"agents__content " + (isFull ? "agents__content--full" : "")}
+        className={'agents__content ' + (isFull ? 'agents__content--full' : '')}
         ref={sliderRef}
       >
         {slicedItems.map((agent) => (
@@ -50,13 +50,13 @@ const AgentsGrid = ({ items, isFull }) => {
             uuid={agent.uuid}
             key={agent.uuid}
             name={agent.displayName}
-            image={agent.fullPortraitV2}
+            image={agent.fullPortrait}
           />
         ))}
       </ul>
       <button
         className={
-          "agents__rightArrow " + (isFull ? "agents__rightArrow--full" : "")
+          'agents__rightArrow ' + (isFull ? 'agents__rightArrow--full' : '')
         }
         onClick={scrollToRightHandler}
       >

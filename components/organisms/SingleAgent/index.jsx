@@ -1,4 +1,4 @@
-import { AgentSkills, AgentInformation } from "../../molecules";
+import { AgentSkills, AgentInformation } from '../../molecules';
 
 const SingleAgent = ({ agent }) => {
   return (
@@ -7,7 +7,7 @@ const SingleAgent = ({ agent }) => {
         description={agent.description}
         name={agent.displayName}
         role={agent.role}
-        image={agent.fullPortraitV2}
+        image={agent.fullPortrait}
         audio={agent.voiceLine.mediaList[0].wave}
       />
       <AgentSkills skills={agent.abilities} />
